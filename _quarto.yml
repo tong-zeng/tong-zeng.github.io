@@ -1,0 +1,49 @@
+project:
+  type: website
+
+website:
+  title: "ML Blogs"
+  reader-mode: true
+  page-navigation: true
+  back-to-top-navigation: true
+  repo-url: https://github.com/tong-zeng/tong-zeng.github.io
+  repo-actions: [source]
+  sidebar:
+    style: "floating"
+    search: true
+    contents: auto
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/tong-zeng
+      - icon: twitter
+        href: https://twitter.com/zeng_tong
+      - icon: envelope
+        href: mailto:tongzeng@vt.edu
+  page-footer: 
+    border: true
+    center: "Copyright 2023, Tong Zeng"
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/ 
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-expand: 2
+    toc-location: right
+    html-math-method: katex
+    theme:
+      light: simplex
+      dark: solar
+    fontsize: 1.2em
+    css: styles.css
+  
+editor: visual
+execute: 
+  freeze: true
+  cache: false
+  

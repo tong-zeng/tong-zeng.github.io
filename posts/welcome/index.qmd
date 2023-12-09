@@ -1,0 +1,30 @@
+---
+title: "Welcome to Machine Learning Blog"
+author: "Tong Zeng"
+date: "2023-11-02"
+categories: [News]
+image: "img/welcome.jpg"
+---
+
+::: column-screen
+![](img/welcome.jpg){.content-header-full-img}
+<p style="text-align:right; font-size:0.66em">
+Image source: https://www.freepik.com
+</p>
+:::
+
+## Welcome
+
+This is the first post in my Machine Learning blog series. Welcome!
+
+This blog series is written in partial fulfillment of the course requirements for [VT](https://www.vt.edu/ "Virginia Tech") CS5805.
+
+## Powered by Quarto
+
+Thanks to Dr. [Martin Laptev](https://maptv.github.io/ "Dr. Martin Laptev's website")'s recommendation, I was introduced to [Quarto](https://quarto.org/ "Quarto official website"). Quarto is sooooo... cool, can't imagine I configured the environment and created my first tech blog built from scratch in minutes, AMAZING!
+
+## Topics
+
+Over the next few weeks, I'll be learning more about Quarto and Github Pages, creating and sharing a series of technical blogs related to machine learning. The main topics include the following topics: probability theory and random variables, linear and nonlinear regression, clustering, classification, and anomaly detection.
+
+I am very excited and look forward to the blogging journey ahead.
