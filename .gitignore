@@ -1,10 +1,1 @@
 .Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.Rprofile
-*.Rproj
-_extensions
-_freeze
-/.quarto/
-renv
