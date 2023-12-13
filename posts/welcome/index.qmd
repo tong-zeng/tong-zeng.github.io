@@ -4,6 +4,7 @@ author: "Tong Zeng"
 date: "2023-11-02"
 categories: [News]
 image: "img/welcome.jpg"
+description: This is the first post in my Machine Learning blog series. Welcome!
 ---
 
 ::: column-screen

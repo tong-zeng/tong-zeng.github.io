@@ -16,7 +16,7 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/tong-zeng
+        href: https://github.com/tong-zeng/tong-zeng.github.io
       - icon: twitter
         href: https://twitter.com/zeng_tong
       - icon: envelope
