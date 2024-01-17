@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/blogs.html",
+    "items": [
+      "/blogs/welcome/index.html",
+      "/blogs/probability/index.html",
+      "/blogs/regression/index.html",
+      "/blogs/classification/index.html",
+      "/blogs/clustering/index.html",
+      "/blogs/anomaly-detection/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/publications/assigning-credit-sci-dataset/index.html",
+      "/publications/modeling-citation-worthiness/index.html",
+      "/publications/most-resources-linked-in-biomedical-articles-disappear-in-eight-years/index.html",
+      "/publications/finding-datasets-in-publications/index.html",
+      "/publications/large-scale-author-name-disambiguation/index.html",
+      "/publications/GotFunding-A-grant-recommendation-system/index.html"
+    ]
+  }
+]

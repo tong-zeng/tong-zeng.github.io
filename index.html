@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.537">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Tong Zeng -</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-featured-pubs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-categories','listing-description','listing-author','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-featured-pubs'] = new List('listing-featured-pubs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pub-list .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-authors','listing-container_title','listing-id','listing-issued','listing-page','listing-publisher','listing-title','listing-title-short','listing-type','listing-article_url','listing-pdf_url','listing-code_url','listing-dataset_url','listing-labels','listing-issue','listing-volume','listing-editor','listing-publisher-place',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-authors","listing-container_title","listing-id","listing-issued","listing-page","listing-publisher","listing-title","listing-title-short","listing-type","listing-article_url","listing-pdf_url","listing-code_url","listing-dataset_url","listing-labels","listing-issue","listing-volume","listing-editor","listing-publisher-place"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pub-list'] = new List('listing-pub-list', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Tong Zeng</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#news"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#publications"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blogs.html"> 
+<span class="menu-text">Blogs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/tong-zeng/tong-zeng.github.io"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/zeng_tong"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:tongzeng@vt.edu"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
+
+
+
+
+<div class="column-screen intro-section page-columns page-full">
+  <div class="column-page">
+    <div class="page-layout-custom">
+      <div class="grid" style="align-items: center; justify-items: center;">
+        <div class="text-left g-col-6">
+          <p style="margin-top: 1rem; font-size: 1.2rem;">My name is <strong>Tong Zeng</strong> and I’m a Researcher and Machine Learning Engineer specializing in Science of Science and Applied Natural Language Processing</p> 
+          <p style="font-size: 1.1rem; margin-bottom: 0.3rem" ;="">with a broad scientific background that ranges from economics, information science and computer science.</p>
+          <p style="font-size: 1.1rem;">I have many years of experience working in industry as a software development engineer and machine learning engineer.</p>
+          <p class="mt-5">
+            <a href="./about.html" class="btn rounded-0 btn-primary btn-lg page-scroll">Know more</a>
+            <a href="mailto:tongzeng@vt.edu" class="btn rounded-0 btn-lg btn-outline-primary page-scroll">Contact me</a>
+          </p>
+        </div>
+        <div class="g-col-1">
+        </div>
+        <div class="g-col-5">
+          <img class="my-photo img-fluid" src="tz.jpg" alt="">
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+<!-- 
+
+
+```{=html}
+<section class="column-screen fp-section news-section">
+  <div class="column-page">
+    <div class="page-layout-custom">
+      <div class="section-heading text-center">
+        <h2 id="news" class="anchored" data-anchor-id="news">
+          RECENT NEWS
+        </h2>
+        <p>My recent updates on research and life</p>
+      </div>
+      <div id="news-list" class="grid">
+
+      </div>
+    </div>
+  </div>
+</section>
+``` -->
+<section class="column-page fp-section">
+<div class="section-heading text-center">
+<h2 id="publications" class="anchored" data-anchor-id="publications">
+FEATURED PUBLICATIONS
+</h2>
+<p>
+Unveiling Our Best Research Works and Beyond
+</p>
+</div>
+<div id="listing-featured-pubs" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-categories="Science of Science,Network Science,DATARANK" data-listing-date-sort="1579842000000" data-listing-file-modified-sort="1705008338725" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2397">
+<a href="./publications/assigning-credit-sci-dataset/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./publications/assigning-credit-sci-dataset/img/f2.png" class="thumbnail-image card-img" style="height: 399px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Assigning credit to scientific datasets using article citation networks
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Science of Science'); return false;">
+Science of Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Network Science'); return false;">
+Network Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DATARANK'); return false;">
+DATARANK
+</div>
+</div>
+<div class="card-text listing-description">
+DataRank - an algorithm to properly track and assign credit to datasets in citation network.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Tong Zeng, Longfeng Wu, Sarah Bratt, Daniel E Acuna
+</div>
+<div class="listing-date">
+Jan 24, 2020
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Science of Science,Deep learning" data-listing-date-sort="1585368000000" data-listing-file-modified-sort="1705008338737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2082">
+<a href="./publications/modeling-citation-worthiness/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./publications/modeling-citation-worthiness/img/att_bilstm.jpg" class="thumbnail-image card-img" style="height: 399px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Modeling citation worthiness by using attention‑based bidirectional long short‑term memory networks and interpretable models
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Science of Science'); return false;">
+Science of Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Deep learning'); return false;">
+Deep learning
+</div>
+</div>
+<div class="card-text listing-description">
+Predict whether a sentence needs citations using Att-BiLSTM Networks, Logistic Regression and Random Forest.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Tong Zeng, Daniel E Acuna
+</div>
+<div class="listing-date">
+Mar 28, 2020
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Science of Science,Logistic Regression" data-listing-date-sort="1552449600000" data-listing-file-modified-sort="1705084013697" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="933">
+<a href="./publications/most-resources-linked-in-biomedical-articles-disappear-in-eight-years/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./publications/most-resources-linked-in-biomedical-articles-disappear-in-eight-years/img/link_decay.png" class="thumbnail-image card-img" style="height: 399px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Dead Science: Most Resources Linked in Biomedical Articles Disappear in Eight Years
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Science of Science'); return false;">
+Science of Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Logistic Regression'); return false;">
+Logistic Regression
+</div>
+</div>
+<div class="card-text listing-description">
+Modeling the resources decay in scientific publications.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Tong Zeng, Alain Shema, Daniel E Acuna
+</div>
+<div class="listing-date">
+Mar 13, 2019
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Science of Science,Deep learning" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1705008562403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1001">
+<a href="./publications/finding-datasets-in-publications/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./publications/finding-datasets-in-publications/img/biLSTM-CRF-network.png" class="thumbnail-image card-img" style="height: 399px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Finding datasets in publications: the Syracuse University approach
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Science of Science'); return false;">
+Science of Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Deep learning'); return false;">
+Deep learning
+</div>
+</div>
+<div class="card-text listing-description">
+Extract dataset in publications using bi-LSTM-CRF network
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Tong Zeng, Daniel E Acuna
+</div>
+<div class="listing-date">
+Dec 31, 2019
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Science of Science,Network Science,DATARANK" data-listing-date-sort="1594958400000" data-listing-file-modified-sort="1705009607103" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="640">
+<a href="./publications/large-scale-author-name-disambiguation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./publications/large-scale-author-name-disambiguation/img/author-name-disambiguation.jpg" class="thumbnail-image card-img" style="height: 399px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Large-scale author name disambiguation using approximate network structures
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Science of Science'); return false;">
+Science of Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Network Science'); return false;">
+Network Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DATARANK'); return false;">
+DATARANK
+</div>
+</div>
+<div class="card-text listing-description">
+Author name disambiguation at large-scale using pyspark.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Tong Zeng, Daniel E Acuna
+</div>
+<div class="listing-date">
+Jul 17, 2020
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="Science of Science,Recommendation System" data-listing-date-sort="1603339200000" data-listing-file-modified-sort="1705008338737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="899">
+<a href="./publications/GotFunding-A-grant-recommendation-system/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./publications/GotFunding-A-grant-recommendation-system/img/architecture.png" class="thumbnail-image card-img" style="height: 399px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+GotFunding: A grant recommendation system based on scientific articles
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Science of Science'); return false;">
+Science of Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Recommendation System'); return false;">
+Recommendation System
+</div>
+</div>
+<div class="card-text listing-description">
+Recommend grant opportunity based on publication history
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Tong Zeng, Daniel E Acuna
+</div>
+<div class="listing-date">
+Oct 22, 2020
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section class="column-screen fp-section pub-list-section page-columns page-full">
+  <div class="column-page">
+    <div class="page-layout-custom">
+      <div class="section-heading text-center">
+        <h2 class="anchored" data-anchor-id="">
+          PUBLICATION LIST
+        </h2>
+        <p>Publications I Have Recently published</p>
+      </div>
+      <div id="listing-pub-list" class="quarto-listing quarto-listing-container-custom">
+
+<div class="card pub-list-section">
+  <div class="card-body">
+    <h3 class="card-title pub-type-heading"> <iconify-icon inline="" icon="bi:book"></iconify-icon> JOURNAL ARTICLES</h3>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <span> Determinants of diminishing returns on NIH-funded projects (under review)</span>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Daniel E Acuna
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <span> 2024</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+
+                        
+
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/predicting-the-longevity-of-resources"><span> Predicting the longevity of resources shared in scientific publications (to be appeared)</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <span>Daniel E Acuna, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <span>Jian Jian, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Lizhen Liang, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <span>Han Zhuang
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>arXiv preprint arXiv:2203.12800</span>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <span> 2022</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="https://arxiv.org/pdf/2203.12800.pdf" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/assigning-credit-sci-dataset"><span> Assigning credit to scientific datasets using article citation networks</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Longfeng Wu, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <span>Sarah Bratt, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <span>Daniel E Acuna
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>Journal of Informetrics</span>
+                            
+                            
+                            <span> 14</span>
+                            
+                            
+                            <span>.2</span>
+                            
+                            
+                            <span> pp. 101013.</span>
+                            
+                            
+                            <span> Elsevier,</span>
+                            
+                            
+                            <span> 2020</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            SCIE indexed: SJR Q1
+                        </span>
+                        
+                        
+                        
+
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="https://www.sciencedirect.com/science/article/am/pii/S1751157719301841" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/modeling-citation-worthiness"><span> Modeling citation worthiness by using attention-based bidirectional long short-term memory networks and interpretable models</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Daniel E Acuna
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>Scientometrics</span>
+                            
+                            
+                            <span> 124</span>
+                            
+                            
+                            <span>.1</span>
+                            
+                            
+                            <span> pp. 399-428.</span>
+                            
+                            
+                            <span> Springer,</span>
+                            
+                            
+                            <span> 2020</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            SCIE indexed: SJR Q1
+                        </span>
+                        
+                        
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="./pdf/citation-worthiness-att-bilstm.pdf" target="_blank">
+                            Dataset Link
+                        </a>
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="./pdf/citation-worthiness-att-bilstm.pdf" target="_blank">
+                            Code Link
+                        </a>
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="./pdf/citation-worthiness-att-bilstm.pdf" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="card pub-list-section">
+  <div class="card-body">
+    <h3 class="card-title pub-type-heading"> <iconify-icon inline="" icon="guidance:conference-room"></iconify-icon> CONFERENCES</h3>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/machine-learning-and-artificial-intelligence-for-science-of-science-and-computational-discovery"><span> Machine learning and artificial intelligence for science of science and computational discovery: Principles, applications, and future opportunities</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <span>Daniel E Acuna, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Han Zhuang, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <span>Lizhen Liang
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>iConference 2021 workshop</span>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <span> 2021</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            Workshop
+                        </span>
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            Top Conference in Info. Sci.
+                        </span>
+                        
+                        
+                        
+
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="https://scienceofscience.org/workshops/" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/GotFunding-A-grant-recommendation-system"><span> GotFunding: A grant recommendation system based on scientific articles</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Daniel E Acuna
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>Proceedings of the ASIS&amp;T annual meeting</span>
+                            
+                            
+                            <span> 57</span>
+                            
+                            
+                            
+                            <span> pp. e323.</span>
+                            
+                            
+                            <span> Wiley Online Library,</span>
+                            
+                            
+                            <span> 2020</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            Top Conference in Info. Sci.
+                        </span>
+                        
+                        
+                        
+
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="https://asistdl.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pra2.323" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/large-scale-author-name-disambiguation"><span> Large-scale author name disambiguation using approximate network structures</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Daniel E Acuna
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>International conference on computational social science</span>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <span> 2020</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="https://scienceofscience.org/assets/pdf/ic2s2-author_name_disambiguation_zeng_and_acuna.pdf" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/most-resources-linked-in-biomedical-articles-disappear-in-eight-years"><span> Dead science: Most resources linked in biomedical articles disappear in eight years</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Alain Shema, 
+                                    </span>
+                                
+
+                            
+                                
+                                    <span>Daniel E Acuna
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>Intl. Conf. On information</span>
+                            
+                            
+                            
+                            
+                            <span> pp. 170-176.</span>
+                            
+                            
+                            <span> Springer,</span>
+                            
+                            
+                            <span> 2019</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            EI Indexed
+                        </span>
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            Top Conference in Info. Sci.
+                        </span>
+                        
+                        
+                        
+
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="https://par.nsf.gov/servlets/purl/10196522" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="card pub-list-section">
+  <div class="card-body">
+    <h3 class="card-title pub-type-heading"> <iconify-icon inline="" icon="gala:book"></iconify-icon> BOOK CHAPTERS</h3>
+
+    <div class="bibio-list-item col-lg-8 mx-auto card">
+        <div class="card-body">
+        
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+            
+                <a class="article-title" href="publications/finding-datasets-in-publications"><span> Finding datasets in publications: The syracuse university approach</span></a>
+            
+            <div class="article-body grid">
+                <div class="g-col-5">
+                    <div class="">
+                        <div class="article-metadata">              
+                            
+                                
+                                    <a href="https://tong-zeng.github.io/">
+                                        <span>Tong Zeng                              
+                                        </span>                            
+                                    </a>
+                                    
+                                        ,
+                                                        
+                                
+
+                            
+                                
+                                    <span>Daniel E Acuna
+                                    </span>
+                                
+
+                            
+                        </div>
+                        <div class="article-metadata">
+                            
+                            <span>Rich search and discovery for research datasets: Building the next generation of scholarly infrastructure</span>
+                            
+                            
+                            
+                            
+                            <span> pp. 157-165.</span>
+                            
+                            
+                            <span> SAGE Publications,</span>
+                            
+                            
+                            <span> 2020</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-7 article-labels-links-wrap">
+                    <div class="article-labels-links">
+                        
+                        
+                        <span class="article-labels btn rounded-0 btn-primary btn-lg page-scroll">
+                            Book Chapter
+                        </span>
+                        
+                        
+                        
+
+                        
+
+                        
+                        <a class="article-links btn rounded-0 btn-outline-primary btn-lg page-scroll" href="https://surface.syr.edu/cgi/viewcontent.cgi?article=1194&amp;context=istpub" target="_blank">
+                            Download PDF
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>            
+        
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Powered by <a href="">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Copyright © 2024 TONG ZENG. ALL RIGHTS RESERVED.</p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
