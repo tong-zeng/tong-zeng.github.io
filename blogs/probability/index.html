@@ -436,7 +436,7 @@ Image source: https://www.freepik.com
 </section>
 <section id="data-preprocessing-and-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="data-preprocessing-and-visualization">Data Preprocessing and Visualization</h3>
-<div id="8a4150b5" class="cell" data-execution_count="1">
+<div id="ee22c72b" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -444,7 +444,7 @@ Image source: https://www.freepik.com
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix,auc,roc_auc_score</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> recall_score, precision_score, accuracy_score, f1_score</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="8e422f78" class="cell" data-execution_count="2">
+<div id="dc245480" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"data/creditcard_10k.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -606,7 +606,7 @@ Image source: https://www.freepik.com
 </div>
 </div>
 </div>
-<div id="c0cdbc06" class="cell" data-execution_count="3">
+<div id="265cf1d8" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
@@ -839,7 +839,7 @@ Image source: https://www.freepik.com
 </div>
 </div>
 </div>
-<div id="687d8b8b" class="cell" data-execution_count="4">
+<div id="379f9a6e" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -882,7 +882,7 @@ dtypes: float64(29), int64(2)
 memory usage: 2.4 MB</code></pre>
 </div>
 </div>
-<div id="fe8a65e9" class="cell" data-execution_count="5">
+<div id="d01c138a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">1</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>ax.pie(df.Class.value_counts(),autopct<span class="op">=</span><span class="st">'</span><span class="sc">%1.1f%%</span><span class="st">'</span>, labels<span class="op">=</span>[<span class="st">'Genuine'</span>,<span class="st">'Fraud'</span>], colors<span class="op">=</span>[<span class="st">'dodgerblue'</span>,<span class="st">'r'</span>])</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)</span>
@@ -896,7 +896,7 @@ memory usage: 2.4 MB</code></pre>
 </div>
 </div>
 </div>
-<div id="ccb22a67" class="cell" data-execution_count="6">
+<div id="9bac630c" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Time_Hr"</span>] <span class="op">=</span> df[<span class="st">"Time"</span>]<span class="op">/</span><span class="dv">3600</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">1</span>, sharex <span class="op">=</span> <span class="va">True</span>, figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">3</span>))</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>ax1.hist(df.Time_Hr[df.Class<span class="op">==</span><span class="dv">0</span>],bins<span class="op">=</span><span class="dv">48</span>,color<span class="op">=</span><span class="st">'tomato'</span>,alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
@@ -914,7 +914,7 @@ memory usage: 2.4 MB</code></pre>
 </div>
 </div>
 </div>
-<div id="dd092572" class="cell" data-execution_count="7">
+<div id="ba551425" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fig, (ax3,ax4) <span class="op">=</span> plt.subplots(<span class="dv">2</span>,<span class="dv">1</span>, figsize <span class="op">=</span> (<span class="dv">6</span>,<span class="dv">3</span>), sharex <span class="op">=</span> <span class="va">True</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>ax3.hist(df.Amount[df.Class<span class="op">==</span><span class="dv">0</span>],bins<span class="op">=</span><span class="dv">50</span>,color<span class="op">=</span><span class="st">'tomato'</span>,alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>ax3.set_yscale(<span class="st">'log'</span>) <span class="co"># to see the tails</span></span>
@@ -934,7 +934,7 @@ memory usage: 2.4 MB</code></pre>
 </div>
 </div>
 </div>
-<div id="a4895916" class="cell" data-execution_count="8">
+<div id="d52be05d" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'scaled_Amount'</span>] <span class="op">=</span> StandardScaler().fit_transform(df[<span class="st">'Amount'</span>].values.reshape(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>))</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop([<span class="st">'Amount'</span>],axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -942,10 +942,10 @@ memory usage: 2.4 MB</code></pre>
 </section>
 <section id="experiments" class="level2">
 <h2 class="anchored" data-anchor-id="experiments">Experiments</h2>
-<div id="1e2c2366" class="cell" data-execution_count="9">
+<div id="26dadd6a" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="d3516403" class="cell" data-execution_count="10">
+<div id="ad884928" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> split_data(df, drop_list):</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df.drop(drop_list,axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df.columns)</span>
@@ -961,7 +961,7 @@ memory usage: 2.4 MB</code></pre>
 <span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"fraud cases in test-set: "</span>, <span class="bu">sum</span>(y_test))</span>
 <span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> X_train, X_test, y_train, y_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="91deed29" class="cell" data-execution_count="11">
+<div id="a7bfe50f" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_predictions(clf, X_train, y_train, X_test):</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># create classifier</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    clf <span class="op">=</span> clf</span>
@@ -976,7 +976,7 @@ memory usage: 2.4 MB</code></pre>
 <span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'train-set confusion matrix:</span><span class="ch">\n</span><span class="st">'</span>, confusion_matrix(y_train,train_pred)) </span>
 <span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> y_pred, y_pred_prob</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="5c981578" class="cell" data-execution_count="12">
+<div id="ef07331e" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_scores(y_test,y_pred,y_pred_prob):</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'test-set confusion matrix:</span><span class="ch">\n</span><span class="st">'</span>, confusion_matrix(y_test,y_pred)) </span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"recall score: "</span>, recall_score(y_test,y_pred))</span>
@@ -985,7 +985,7 @@ memory usage: 2.4 MB</code></pre>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"accuracy score: "</span>, accuracy_score(y_test,y_pred))</span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"ROC AUC: </span><span class="sc">{}</span><span class="st">"</span>.<span class="bu">format</span>(roc_auc_score(y_test, y_pred_prob[:,<span class="dv">1</span>])))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="0955a91c" class="cell" data-execution_count="13">
+<div id="07953efd" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>drop_list <span class="op">=</span> []</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> split_data(df, drop_list)</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>y_pred, y_pred_prob <span class="op">=</span> get_predictions(GaussianNB(), X_train, y_train, X_test)</span>
@@ -1711,10 +1711,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p>Powered by <a href="https://quarto.org/" target="_blank">Quarto</a></p>
+</div>   
     <div class="nav-footer-center">
-<p>Copyright 2023, Tong Zeng</p>
+<p>Copyright © 2024 TONG ZENG. ALL RIGHTS RESERVED.</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
