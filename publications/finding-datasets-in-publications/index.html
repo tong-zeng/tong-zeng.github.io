@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.537">
+<meta name="generator" content="quarto-1.5.52">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,7 +12,7 @@
 <meta name="keywords" content="Dataset identification, Dataset discovery, Research Dataset">
 <meta name="description" content="Extract dataset in publications using bi-LSTM-CRF network">
 
-<title>Tong Zeng - Finding datasets in publications: the Syracuse University approach</title>
+<title>Finding datasets in publications: the Syracuse University approach – Tong Zeng</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,7 +97,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
 <meta name="citation_cover_date" content="2019-12-31">
 <meta name="citation_year" content="2019">
 <meta name="citation_online_date" content="2019-12-31">
-<meta name="citation_fulltext_html_url" content="https://tong-zeng.github.io//publications/finding-datasets-in-publications">
+<meta name="citation_fulltext_html_url" content="https://tong-zeng.github.io/publications/finding-datasets-in-publications/">
 <meta name="citation_pdf_url" content="https://surface.syr.edu/cgi/viewcontent.cgi?article=1194&amp;amp;context=istpub">
 <meta name="citation_language" content="en">
 <meta name="citation_firstpage" content="157">
@@ -117,7 +117,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -159,7 +159,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -274,7 +274,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
 <h3 data-number="2.1" class="anchored" data-anchor-id="overall-view-of-the-architecture"><span class="header-section-number">2.1</span> Overall View of the Architecture</h3>
 <p>In this section we propose a model for detecting mentions based on a bi-LSTM CRF architecture. At a high level, the model uses a sequence-to-sequence recurrent neural network that produces the probability of whether a token belongs to a dataset mention. The CRF layer takes those probabilities and estimates the most likely sequence based on constraints between label transitions (e.g., mention–to–no-mention–to–mention has low probability). While this is a standard architecture for modelling sequence labelling, the application to our particular dataset and problem is new.</p>
 <p>We now describe in more detail the choices of word representation, hyperparameters and training parameters. A schematic view of the model is given in Figure <a href="#fig-network" class="quarto-xref">Figure&nbsp;1</a> and the components are as follow.</p>
-<div id="fig-network" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-network" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/biLSTM-CRF-network.png" class="img-fluid figure-img">
@@ -319,7 +319,7 @@ Figure&nbsp;1: The architecture of bi-LSTM CRF network
   booktitle = {Rich Search and Discovery for Research Datasets},
   pages = {157 - 165},
   date = {2019-12-31},
-  url = {https://tong-zeng.github.io//publications/finding-datasets-in-publications},
+  url = {https://tong-zeng.github.io/publications/finding-datasets-in-publications/},
   langid = {en},
   abstract = {Science is fundamentally an incremental discipline that
     depends on previous scientists’ work. Datasets form an integral part
@@ -342,7 +342,7 @@ Figure&nbsp;1: The architecture of bi-LSTM CRF network
 Zeng, Tong, and Daniel E Acuna. 2019. <span>“Finding Datasets in
 Publications: The Syracuse University Approach .”</span> In <em>Rich
 Search and Discovery for Research Datasets</em>, edited by JULIA I.
-LANE, IAN MULVANY, and PACO NATHAN, 157–65. SAGE. <a href="https://tong-zeng.github.io//publications/finding-datasets-in-publications">https://tong-zeng.github.io//publications/finding-datasets-in-publications</a>.
+LANE, IAN MULVANY, and PACO NATHAN, 157–65. SAGE. <a href="https://tong-zeng.github.io/publications/finding-datasets-in-publications/">https://tong-zeng.github.io/publications/finding-datasets-in-publications/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -379,18 +379,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -422,7 +411,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -474,6 +485,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (showAllCode) {
     showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/tong-zeng\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -508,7 +537,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -556,7 +589,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {

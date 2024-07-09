@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.537">
+<meta name="generator" content="quarto-1.5.52">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2023-11-30">
 <meta name="description" content="Finding unusual rare cases different from the majority">
 
-<title>Tong Zeng - Anomaly Detection</title>
+<title>Anomaly Detection – Tong Zeng</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,7 +36,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -117,7 +117,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
  var macros = [];
@@ -132,7 +132,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
    });
 }}});
   </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -176,7 +176,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -218,7 +218,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -229,13 +229,13 @@ window.Quarto = {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
           <h1 class="quarto-secondary-nav-title">Anomaly Detection</h1>
         </a>     
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -291,9 +291,9 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Blogs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -399,7 +399,7 @@ Image source: https://www.freepik.com
 <p>…<br>
 </p></li>
 </ol>
-<div id="fig-applications" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-applications" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-applications-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/applications.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
@@ -423,7 +423,7 @@ Figure&nbsp;1: Illustration of Anomaly Detection Applications
 <div aria-describedby="fig-statistical-methods-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-statistical-methods" style="flex-basis: 100.0%;justify-content: flex-start;">
-<div id="fig-Detecting-Outliers-with-z-Scores" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-Detecting-Outliers-with-z-Scores" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-Detecting-Outliers-with-z-Scores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/zscore.png" class="img-fluid figure-img" data-ref-parent="fig-statistical-methods">
@@ -437,7 +437,7 @@ Figure&nbsp;1: Illustration of Anomaly Detection Applications
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-statistical-methods" style="flex-basis: 100.0%;justify-content: flex-start;">
-<div id="fig-Detecting-Outliers-with-IQR" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-Detecting-Outliers-with-IQR" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-Detecting-Outliers-with-IQR-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/quartile.png" class="img-fluid figure-img" data-ref-parent="fig-statistical-methods">
@@ -466,7 +466,7 @@ Figure&nbsp;2: Statistical Methods for Outliers Detection. source: <a href="topi
 <section id="isolation-forest" class="level4">
 <h4 class="anchored" data-anchor-id="isolation-forest">Isolation Forest</h4>
 <p>The Isolation Forest algorithm is an unsupervised method for detecting anomalies by leveraging the characteristics of anomalies, specifically their scarcity and distinctiveness. Since anomalies are both infrequent and different from the majority of data points, they are more prone to isolation. This algorithm individually isolates each data point and categorizes them as outliers or inliers based on the time it takes to separate them. The separation process is influenced by the number of points within the proximity of a given point. If an attempt is made to isolate a point that is clearly not an outlier, it will likely be surrounded by many points, making isolation challenging. Conversely, if the point is indeed an outlier, it will be isolated easily as it tends to be solitary in the dataset. An illustration of the algorithm is listed below:</p>
-<div id="fig-if" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-if" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-if-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/if.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
@@ -505,7 +505,7 @@ Figure&nbsp;3: Illustration of Isolation Forest Method. source: <a href="https:/
 <section id="dataset" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
 <p>In this section, we will load the libraries, analysis the dataset and get insights from the data distribution through data visualization. The procedures are listed below:</p>
-<div id="457fdd3c" class="cell" data-execution_count="1">
+<div id="443f6053" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -514,7 +514,7 @@ Figure&nbsp;3: Illustration of Isolation Forest Method. source: <a href="https:/
 </div>
 <section id="load-the-data" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="load-the-data">Load the Data</h3>
-<div id="ff432332" class="cell page-columns page-full" data-execution_count="2">
+<div id="e0be0a90" class="cell page-columns page-full" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>nRowsRead <span class="op">=</span> <span class="dv">1000</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'data/creditcard_10k.csv'</span>, delimiter<span class="op">=</span><span class="st">','</span>, nrows <span class="op">=</span> nRowsRead)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -522,7 +522,7 @@ Figure&nbsp;3: Illustration of Isolation Forest Method. source: <a href="https:/
 <div>
 
 
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -824,7 +824,7 @@ Figure&nbsp;3: Illustration of Isolation Forest Method. source: <a href="https:/
 </section>
 <section id="descriptive-statistics" class="level3">
 <h3 class="anchored" data-anchor-id="descriptive-statistics">Descriptive Statistics</h3>
-<div id="b8d21c11" class="cell" data-execution_count="3">
+<div id="cb1621e7" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'No Frauds'</span>, <span class="bu">round</span>(df[<span class="st">'Class'</span>].value_counts()[<span class="dv">0</span>]<span class="op">/</span><span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span>,<span class="dv">2</span>), <span class="st">'</span><span class="sc">% o</span><span class="st">f the dataset'</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Frauds'</span>, <span class="bu">round</span>(df[<span class="st">'Class'</span>].value_counts()[<span class="dv">1</span>]<span class="op">/</span><span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span>,<span class="dv">2</span>), <span class="st">'</span><span class="sc">% o</span><span class="st">f the dataset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -832,7 +832,7 @@ Figure&nbsp;3: Illustration of Isolation Forest Method. source: <a href="https:/
 Frauds 0.2 % of the dataset</code></pre>
 </div>
 </div>
-<div id="da1f2121" class="cell" data-execution_count="4">
+<div id="dd9c656f" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fraud <span class="op">=</span> <span class="bu">len</span>(df[df[<span class="st">'Class'</span>] <span class="op">==</span> <span class="dv">1</span>]) <span class="op">/</span> <span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>nofraud <span class="op">=</span> <span class="bu">len</span>(df[df[<span class="st">'Class'</span>] <span class="op">==</span> <span class="dv">0</span>]) <span class="op">/</span> <span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>fraud_percentage <span class="op">=</span> [nofraud, fraud]</span>
@@ -854,7 +854,7 @@ Frauds 0.2 % of the dataset</code></pre>
 <section id="data-distribution" class="level3">
 <h3 class="anchored" data-anchor-id="data-distribution">Data Distribution</h3>
 <p>As we can see from the outputs above, the dataset is highly unbalanced, the frauds data points only accounts for 0.2% which makes the anomaly detection challenge compare to most supervised learning.</p>
-<div id="be9d1a2e" class="cell" data-execution_count="5">
+<div id="3850aa8a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'default'</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>sns.pairplot(df[[<span class="st">"Amount"</span>, <span class="st">"Time"</span>]], aspect<span class="op">=</span><span class="fl">1.5</span>, height<span class="op">=</span><span class="fl">2.6</span>, kind<span class="op">=</span><span class="st">"scatter"</span>, diag_kind<span class="op">=</span><span class="st">"hist"</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.rc(<span class="st">'font'</span>, <span class="op">**</span>{<span class="st">'size'</span>: <span class="dv">13</span>})</span>
@@ -862,13 +862,13 @@ Frauds 0.2 % of the dataset</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="index_files/figure-html/cell-6-output-1.png" width="770" height="515" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>The <code>Amount</code> are highly skewed, but the data points are almost equally distributed over the time. We then examine the relationship between the variables by plotting the correlation heatmap as below:</p>
-<div id="5e843e72" class="cell" data-execution_count="6">
+<div id="973f3a20" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'default'</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_corr <span class="op">=</span> df.corr()</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="fl">8.8</span>,<span class="dv">7</span>))</span>
@@ -881,7 +881,7 @@ Frauds 0.2 % of the dataset</code></pre>
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-7-output-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="index_files/figure-html/cell-7-output-1.png" class="quarto-figure quarto-figure-center figure-img" width="734" height="645"></p>
 </figure>
 </div>
 </div>
@@ -890,7 +890,7 @@ Frauds 0.2 % of the dataset</code></pre>
 <section id="d-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="d-visualization">3D Visualization</h3>
 <p>In order to get a better understanding of the dataset, we can use PCA to transform the data into 3 dimensions and mark the outliers in the 3D space.</p>
-<div id="154d9dc4" class="cell" data-execution_count="7">
+<div id="c57acefb" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits.mplot3d <span class="im">import</span> Axes3D</span>
@@ -916,13 +916,13 @@ Frauds 0.2 % of the dataset</code></pre>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>plt.yticks(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
 <span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="fig-3d" class="quarto-figure quarto-figure-center quarto-float anchored" data-cap-location="top">
+<div id="fig-3d" class="quarto-float quarto-figure quarto-figure-center anchored" data-cap-location="top">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: Visualization of Outliers in 3D Space
 </figcaption>
 <div aria-describedby="fig-3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="index_files/figure-html/fig-3d-output-1.png" class="img-fluid figure-img">
+<img src="index_files/figure-html/fig-3d-output-1.png" width="493" height="482" class="figure-img">
 </div>
 </figure>
 </div>
@@ -935,14 +935,14 @@ Figure&nbsp;4: Visualization of Outliers in 3D Space
 <section id="preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing">Preprocessing</h3>
 <p>We first load the libraries, and prepare the data for modeling.</p>
-<div id="612ec306" class="cell" data-execution_count="9">
+<div id="73bcdf69" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report,accuracy_score, confusion_matrix</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> IsolationForest</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> LocalOutlierFactor</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> OneClassSVM</span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix, ConfusionMatrixDisplay</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="19ffc6f9" class="cell" data-execution_count="10">
+<div id="4cdb3b37" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'data/creditcard_10k.csv'</span>, delimiter<span class="op">=</span><span class="st">','</span>, nrows <span class="op">=</span> <span class="dv">10000</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>columns <span class="op">=</span> df.columns.tolist()</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>columns <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> columns <span class="cf">if</span> c <span class="kw">not</span> <span class="kw">in</span> [<span class="st">"Class"</span>]]</span>
@@ -957,7 +957,7 @@ Figure&nbsp;4: Visualization of Outliers in 3D Space
 (9999,)</code></pre>
 </div>
 </div>
-<div id="294c5a76" class="cell" data-execution_count="11">
+<div id="0e8f2741" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Fraud <span class="op">=</span> df[df[<span class="st">'Class'</span>]<span class="op">==</span><span class="dv">1</span>]</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Valid <span class="op">=</span> df[df[<span class="st">'Class'</span>]<span class="op">==</span><span class="dv">0</span>]</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>outlier_ratio <span class="op">=</span> <span class="bu">len</span>(Fraud)<span class="op">/</span><span class="bu">float</span>(<span class="bu">len</span>(Valid))</span>
@@ -970,7 +970,7 @@ Figure&nbsp;4: Visualization of Outliers in 3D Space
 <section id="training" class="level3">
 <h3 class="anchored" data-anchor-id="training">Training</h3>
 <p>We can now define the models. We are going to use <code>OneClassSVM</code> as the baseline, and focus on <code>IsolationForest</code> and <code>LocalOutlierFactor</code> for anomaly detection.</p>
-<div id="17828fc3" class="cell" data-execution_count="12">
+<div id="81b291c8" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>classifiers <span class="op">=</span> {</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Isolation Forest"</span>: IsolationForest(</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>        n_estimators<span class="op">=</span><span class="dv">100</span>, </span>
@@ -996,7 +996,7 @@ Figure&nbsp;4: Visualization of Outliers in 3D Space
 <span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Training begins …</p>
-<div id="85b5a676" class="cell" data-execution_count="13">
+<div id="9a32e32c" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fit_predict(classifier_name):</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    n_outliers <span class="op">=</span> <span class="bu">len</span>(Fraud)</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    classifier <span class="op">=</span> classifiers[classifier_name]</span>
@@ -1017,7 +1017,7 @@ Figure&nbsp;4: Visualization of Outliers in 3D Space
 <span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>classifier_name<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>n_errors<span class="sc">}</span><span class="ss"> prediction errors"</span>)</span>
 <span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> y_pred</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="14025e8f" class="cell" data-execution_count="14">
+<div id="3525edda" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>y_pred_if <span class="op">=</span> fit_predict(<span class="st">"Isolation Forest"</span>)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>y_pred_lof <span class="op">=</span> fit_predict(<span class="st">"Local Outlier Factor"</span>)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>y_pred_svm <span class="op">=</span> fit_predict(<span class="st">"Support Vector Machine"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1032,7 +1032,7 @@ Support Vector Machine: 5529 prediction errors</code></pre>
 <section id="performance-evaluation" class="level3">
 <h3 class="anchored" data-anchor-id="performance-evaluation">Performance Evaluation</h3>
 <p>In this section, we will evaluate the model performance with the precision, recall and <span class="math inline">F_1</span> score, as long as a visualization of the confusion matrix.</p>
-<div id="77732a41" class="cell" data-execution_count="15">
+<div id="1949e45d" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate(y_pred):</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#print("Accuracy Score:")</span></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#print(accuracy_score(Y,y_pred))</span></span>
@@ -1046,7 +1046,7 @@ Support Vector Machine: 5529 prediction errors</code></pre>
 <span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">1.1</span>,<span class="fl">1.1</span>))</span>
 <span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> disp.plot(ax<span class="op">=</span>ax)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="c7e8a2e1" class="cell" data-execution_count="16">
+<div id="129c8d09" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>evaluate(y_pred_lof)</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>disp <span class="op">=</span> display_confusion_matrix(y_pred_lof)</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1064,12 +1064,12 @@ weighted avg       0.99      0.99      0.99      9999
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-17-output-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="index_files/figure-html/cell-17-output-2.png" class="quarto-figure quarto-figure-center figure-img" width="179" height="139"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="5ef218fe" class="cell" data-execution_count="17">
+<div id="22dbab9b" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>evaluate(y_pred_if)</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>disp <span class="op">=</span> display_confusion_matrix(y_pred_if)</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1087,12 +1087,12 @@ weighted avg       0.99      0.99      0.99      9999
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-18-output-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="index_files/figure-html/cell-18-output-2.png" class="quarto-figure quarto-figure-center figure-img" width="179" height="139"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="66ea2449" class="cell tbl-column-body" data-execution_count="18">
+<div id="9602160a" class="cell tbl-column-body" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>evaluate(y_pred_svm)</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>disp <span class="op">=</span> display_confusion_matrix(y_pred_svm)</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1110,7 +1110,7 @@ weighted avg       0.99      0.45      0.61      9999
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-19-output-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="index_files/figure-html/cell-19-output-2.png" class="quarto-figure quarto-figure-center figure-img" width="179" height="139"></p>
 </figure>
 </div>
 </div>
@@ -1166,18 +1166,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1209,7 +1198,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -1261,6 +1272,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (showAllCode) {
     showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/tong-zeng\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1295,7 +1324,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -1343,7 +1376,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -1570,7 +1608,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <input type="hidden" id="giscus-alt-theme" value="light">
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../blogs/welcome/index.html" class="pagination-link  aria-label=" welcome="" to="" machine="" learning="" blog"="">
+      <a href="../../blogs/welcome/index.html" class="pagination-link" aria-label="Welcome to Machine Learning Blog">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome to Machine Learning Blog</span>
       </a>          
   </div>
@@ -1934,7 +1972,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb26-391"><a href="#cb26-391" aria-hidden="true" tabindex="-1"></a>The <span class="in">`isolation forest`</span> and <span class="in">`local outlier factor`</span> are much better than <span class="in">`OneClassSVM`</span>, and performs reasonably well. However, the <span class="in">`isolation forest`</span> has slightly better performance and it also runs faster than <span class="in">`local outlier factor`</span> in our experiments.</span>
 <span id="cb26-392"><a href="#cb26-392" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-393"><a href="#cb26-393" aria-hidden="true" tabindex="-1"></a>In summary, when choosing between <span class="in">`isolation forest`</span> and Local <span class="in">`local outlier factor`</span>, you should consider the nature of your data, the types of outliers you expect, and the computational resources available. It's often beneficial to experiment with both algorithms on your specific dataset and assess their performance using appropriate evaluation metrics. Ensemble approaches that combine the strengths of both methods may also be considered for more robust outlier detection.</span>
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

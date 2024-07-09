@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.537">
+<meta name="generator" content="quarto-1.5.52">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,7 +12,7 @@
 <meta name="keywords" content="Author name disambiguation, Entity resolution, Clustering, Approximate nearest neighbor, Minimum-spanning tree">
 <meta name="description" content="Author name disambiguation at large-scale using pyspark.">
 
-<title>Tong Zeng - Large-scale author name disambiguation using approximate network structures</title>
+<title>Large-scale author name disambiguation using approximate network structures – Tong Zeng</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ gtag('js', new Date());
 gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
 </script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
  var macros = [];
@@ -96,7 +96,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
    });
 }}});
   </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -136,7 +136,7 @@ window.Quarto = {
 <meta name="citation_cover_date" content="2020-07-17">
 <meta name="citation_year" content="2020">
 <meta name="citation_online_date" content="2020-07-17">
-<meta name="citation_fulltext_html_url" content="https://tong-zeng.github.io//publications/large-scale-author-name-disambiguation">
+<meta name="citation_fulltext_html_url" content="https://tong-zeng.github.io/publications/large-scale-author-name-disambiguation/">
 <meta name="citation_pdf_url" content="https://scienceofscience.org/assets/pdf/ic2s2-author_name_disambiguation_zeng_and_acuna.pdf">
 <meta name="citation_language" content="en">
 <meta name="citation_conference_title" content="6th International Conference on Computational Social Science">
@@ -154,7 +154,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -196,7 +196,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -327,7 +327,7 @@ window.Quarto = {
 <section id="clustering" class="level3" data-number="2.3">
 <h3 data-number="2.3" class="anchored" data-anchor-id="clustering"><span class="header-section-number">2.3</span> Clustering</h3>
 <p>Several previous studies have used Hierarchical Agglomerative Clustering (HAC) to partition signatures into groups. . However, as the time complexity of HAC is <span class="math inline">O(n^3)</span>, it is difficult to scale to large blocks. Also, each merging step in HAC requires global distance information of the whole block, thus difficult to distribute the model into multiple nodes. In order to overcome these problems, we propose a scalable and distributable algorithm whose steps are described now (see <a href="#fig-steps" class="quarto-xref">Figure&nbsp;1</a>).</p>
-<div id="fig-steps" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-steps" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-steps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/steps.png" class="img-fluid figure-img">
@@ -342,13 +342,13 @@ Figure&nbsp;1: Main steps of ANNGC algorithm
 <section id="results" class="level3" data-number="2.4">
 <h3 data-number="2.4" class="anchored" data-anchor-id="results"><span class="header-section-number">2.4</span> Results</h3>
 <p>Baseline model: The HAC for clustering is used as a baseline. The blocking and linkage function are the same as ANNGC. As shown in <a href="#tbl-performance" class="quarto-xref">Table&nbsp;1</a>, ANNGC local cut has the best precision, but the overall performance is slightly lower than the HAC. The local cut is better than global cut in both methods, as the thresholds are customized for each block.</p>
-<div id="tbl-performance" class="quarto-float anchored">
+<div id="tbl-performance" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-performance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Performance on test set
 </figcaption>
 <div aria-describedby="tbl-performance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Description</th>
@@ -404,7 +404,7 @@ Table&nbsp;1: Performance on test set
     Science},
   date = {2020-07-17},
   eventdate = {},
-  url = {https://tong-zeng.github.io//publications/large-scale-author-name-disambiguation},
+  url = {https://tong-zeng.github.io/publications/large-scale-author-name-disambiguation/},
   langid = {en},
   abstract = {Properly identifying the author of a scientific article is
     an important task for giving credit, tracking progress, and
@@ -423,7 +423,7 @@ Table&nbsp;1: Performance on test set
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-zeng2020" class="csl-entry quarto-appendix-citeas" role="listitem">
 Zeng, Tong, and Daniel E Acuna. 2020. <span>“Large-Scale Author Name
 Disambiguation Using Approximate Network Structures.”</span> In <em>6th
-International Conference on Computational Social Science</em>. <a href="https://tong-zeng.github.io//publications/large-scale-author-name-disambiguation">https://tong-zeng.github.io//publications/large-scale-author-name-disambiguation</a>.
+International Conference on Computational Social Science</em>. <a href="https://tong-zeng.github.io/publications/large-scale-author-name-disambiguation/">https://tong-zeng.github.io/publications/large-scale-author-name-disambiguation/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -460,18 +460,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -503,7 +492,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -555,6 +566,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (showAllCode) {
     showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/tong-zeng\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -589,7 +618,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -637,7 +670,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {

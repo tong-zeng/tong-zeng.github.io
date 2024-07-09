@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.537">
+<meta name="generator" content="quarto-1.5.52">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2023-11-22">
 <meta name="description" content="Train classification models for dog diseases prediction">
 
-<title>Tong Zeng - Classification</title>
+<title>Classification – Tong Zeng</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,7 +36,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -118,7 +118,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
  var macros = [];
@@ -133,7 +133,7 @@ gtag('config', 'GTM-TKJ3X4RT', { 'anonymize_ip': false});
    });
 }}});
   </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -177,7 +177,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -219,7 +219,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -230,13 +230,13 @@ window.Quarto = {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
           <h1 class="quarto-secondary-nav-title">Classification</h1>
         </a>     
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -293,9 +293,9 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Blogs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -491,7 +491,7 @@ window.Quarto = {
 <section id="data-analysis" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="data-analysis">Data Analysis</h3>
 <p>We first load all the python libraries we might use in the analysis:</p>
-<div id="7583b037" class="cell" data-execution_count="1">
+<div id="43f9fcbd" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -502,17 +502,17 @@ window.Quarto = {
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now, load the prepossessed (convert the textual data into numerical representation) csv file into pandas <code>DataFrame</code>:</p>
-<div id="f0fb4ea2" class="cell" data-execution_count="2">
+<div id="a38d5b6e" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'data/pre_processed.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Let’s take a look at the first 5 rows:</p>
-<div id="b20b4419" class="cell page-columns page-full" data-execution_count="3">
+<div id="542fe4a5" class="cell page-columns page-full" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display column-page" data-execution_count="3">
 <div>
 
 
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -672,13 +672,13 @@ window.Quarto = {
 <section id="descriptive-statistics" class="level4">
 <h4 class="anchored" data-anchor-id="descriptive-statistics">Descriptive Statistics</h4>
 <p>We now take a look at the descriptive statistics of the dataset:</p>
-<div id="49953f8c" class="cell" data-execution_count="4">
+<div id="122d509d" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 
 
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -910,7 +910,7 @@ window.Quarto = {
 <section id="visualization" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="visualization">Visualization</h4>
 <p>We wanted to examine the dependent variable first, this could be done by count how many records for each disease. We plot the histogram as follows:</p>
-<div id="1407667e" class="cell" data-execution_count="5">
+<div id="0494ed53" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sns.histplot(df[<span class="st">'Disease'</span>])</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">75</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -924,14 +924,14 @@ window.Quarto = {
 </div>
 <p>From the figure above, we can see that there are 12 diseases and there are equally distributed.</p>
 <p>It would be interesting to show the distribution of the symptoms, we thus plots a word cloud of the symptom names as following:</p>
-<div id="d2ae4725" class="cell" data-execution_count="6">
+<div id="91e8fb61" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>count_series <span class="op">=</span> df.drop(columns<span class="op">=</span>[<span class="st">"Unnamed: 0"</span>, <span class="st">"Disease"</span>]).<span class="bu">sum</span>(axis <span class="op">=</span> <span class="dv">0</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>count_df <span class="op">=</span> count_series.to_frame().reset_index().rename(columns <span class="op">=</span> {<span class="st">"index"</span>:<span class="st">"symptom"</span>, <span class="dv">0</span>:<span class="st">"frequency"</span>})</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>freq_list <span class="op">=</span> {}</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> index <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(count_df)):</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    freq_list[count_df[<span class="st">'symptom'</span>].iloc[index]] <span class="op">=</span> count_df[<span class="st">'frequency'</span>].iloc[index]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="50a6fa9d" class="cell page-columns page-full" data-execution_count="7">
+<div id="093201e1" class="cell page-columns page-full" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> wordcloud <span class="im">import</span> WordCloud</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>wc <span class="op">=</span> WordCloud(width<span class="op">=</span><span class="dv">3840</span>, height<span class="op">=</span><span class="dv">2160</span>).generate_from_frequencies(freq_list)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">32</span>, <span class="dv">10</span>))</span>
@@ -951,7 +951,7 @@ window.Quarto = {
 <section id="data-preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="data-preprocessing">Data Preprocessing</h3>
 <p>We then, further convert the pandas dataframe to the format fits the model training requirements. It mainly includes: separate the features and labels into different numpy array; split the data into train, validation and test set.</p>
-<div id="ebbfcb7b" class="cell" data-execution_count="8">
+<div id="6b723682" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop([<span class="st">'Unnamed: 0'</span>, <span class="st">'Disease'</span>,<span class="st">'Tick fever'</span>,<span class="st">'Distemper'</span>, <span class="st">'Parvovirus'</span>,</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Hepatitis'</span>, <span class="st">'Tetanus'</span>, <span class="st">'Chronic kidney Disease'</span>, <span class="st">'Diabetes'</span>,</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Gastrointestinal Disease'</span>, <span class="st">'Allergies'</span>, <span class="st">'Gingitivis'</span>, <span class="st">'Cancers'</span>,</span>
@@ -961,11 +961,11 @@ window.Quarto = {
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>          <span class="st">'Gastrointestinal Disease'</span>, <span class="st">'Allergies'</span>, <span class="st">'Gingitivis'</span>, <span class="st">'Cancers'</span>,</span>
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>          <span class="st">'Skin Rashes'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="4c803828" class="cell" data-execution_count="9">
+<div id="e27d02f4" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>X_train_val, X_test, y_train_val, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">66</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>X_train, X_val, y_train, y_val <span class="op">=</span> train_test_split(X_train_val, y_train_val, test_size<span class="op">=</span><span class="fl">0.25</span>, random_state<span class="op">=</span><span class="dv">66</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="a6750a40" class="cell" data-execution_count="10">
+<div id="9130a376" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show how many data in each set</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Length of train set:"</span>, <span class="bu">len</span>(X_train))</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Length of validation set:"</span>, <span class="bu">len</span>(X_val))</span>
@@ -981,7 +981,7 @@ Length of test set: 4800</code></pre>
 <section id="experiments" class="level2">
 <h2 class="anchored" data-anchor-id="experiments">Experiments</h2>
 <p>We will use the pytorch framework to build and train a neural network, thus, we need to use the pytorch ecosystem to format the dataset, build the network architecture, load and feed dataset model, etc. We will introduce all these steps in this section.</p>
-<div id="cf471599" class="cell" data-execution_count="11">
+<div id="a58293df" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn.functional <span class="im">as</span> F</span>
@@ -990,7 +990,7 @@ Length of test set: 4800</code></pre>
 <section id="network-implementation" class="level3">
 <h3 class="anchored" data-anchor-id="network-implementation">Network Implementation</h3>
 <p>Wrap the dataset into pytorch <code>Dataset</code> format:</p>
-<div id="a510ed35" class="cell" data-execution_count="12">
+<div id="8f1416ae" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DogSymptomsDataset(Dataset):</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, X, Y):</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.X <span class="op">=</span> torch.tensor(X.values, dtype<span class="op">=</span>torch.float32)</span>
@@ -1003,7 +1003,7 @@ Length of test set: 4800</code></pre>
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (<span class="va">self</span>.X[index], <span class="va">self</span>.Y[index])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Initialize the <code>DogSymptomsDataset</code> and <code>DataLoader</code> for the train, validation and test data.</p>
-<div id="06916109" class="cell" data-execution_count="13">
+<div id="57f1f24f" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>train_ds <span class="op">=</span> DogSymptomsDataset(X_train, y_train)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>val_ds <span class="op">=</span> DogSymptomsDataset(X_val, y_val)</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>test_ds <span class="op">=</span> DogSymptomsDataset(X_test, y_test)</span>
@@ -1013,7 +1013,7 @@ Length of test set: 4800</code></pre>
 <span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>testloader <span class="op">=</span> DataLoader(test_ds, batch_size<span class="op">=</span><span class="dv">32</span>, shuffle<span class="op">=</span><span class="va">True</span>, num_workers<span class="op">=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The network structure mainly consist of several feedforward and dropoutas layer, we use <code>ReLU</code> as the activation function and implement the forward function for passing the data through network. The pytorch framework will take care of error back-propagation.</p>
-<div id="55d0204b" class="cell" data-execution_count="14">
+<div id="869a55f9" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MLP(nn.Module):</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">super</span>(MLP, <span class="va">self</span>).<span class="fu">__init__</span>()</span>
@@ -1038,7 +1038,7 @@ Length of test set: 4800</code></pre>
 <section id="training" class="level3">
 <h3 class="anchored" data-anchor-id="training">Training</h3>
 <p>The last missing puzzle now is implement the train and validation function which manages the whole training and validation process.</p>
-<div id="ca3b2f73" class="cell" data-execution_count="15">
+<div id="d17bdc9e" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f1(pred_list, label_list):</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  pred_all <span class="op">=</span> torch.cat(pred_list)</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  label_all <span class="op">=</span> torch.cat(label_list)</span>
@@ -1066,7 +1066,7 @@ Length of test set: 4800</code></pre>
 <span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>  avg_f1 <span class="op">=</span> f1(pred_list, label_list)</span>
 <span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (avg_loss, avg_f1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="14078dd1" class="cell" data-execution_count="16">
+<div id="c4f4ce2f" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> train():</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  mlp <span class="op">=</span> MLP()</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  torch.manual_seed(<span class="dv">666</span>)</span>
@@ -1121,14 +1121,14 @@ Length of test set: 4800</code></pre>
 <span id="cb17-52"><a href="#cb17-52" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (mlp, train_loss_list,val_loss_list,train_f1_list,val_f1_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We now start the training process:</p>
-<div id="c186ba68" class="cell" data-execution_count="17">
+<div id="aea9cd26" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>model, train_loss_list,val_loss_list,train_f1_list,val_f1_list <span class="op">=</span> train()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="performance-evaluation" class="level3">
 <h3 class="anchored" data-anchor-id="performance-evaluation"><strong>Performance Evaluation</strong></h3>
 <p>We are now have already completed the model training, it is time to use the model to make predict on our test set, then, calculate the precision, recall and <span class="math inline">F_1</span> score base on the predicted disease and the ground truth label.</p>
-<div id="c93d77d8" class="cell" data-execution_count="18">
+<div id="6b9985e1" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test(model):</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  pred_list <span class="op">=</span> []</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  label_list <span class="op">=</span> []</span>
@@ -1146,7 +1146,7 @@ Length of test set: 4800</code></pre>
 <span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>  avg_f1 <span class="op">=</span> f1(pred_list, label_list)</span>
 <span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (avg_f1, y_pred_classes, y_true_classes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="d9b38a5a" class="cell" data-execution_count="19">
+<div id="cd273498" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>avg_f1, y_pred_classes, y_true_classes <span class="op">=</span> test(model)</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>report <span class="op">=</span> classification_report(y_true_classes, y_pred_classes,output_dict<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>report_labeled<span class="op">=</span>{}</span>
@@ -1160,7 +1160,7 @@ Length of test set: 4800</code></pre>
 <div>
 
 
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -1173,16 +1173,16 @@ Length of test set: 4800</code></pre>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Tick fever</td>
-<td>0.990244</td>
-<td>0.995098</td>
-<td>0.992665</td>
+<td>0.995074</td>
+<td>0.990196</td>
+<td>0.992629</td>
 <td>408.0</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Distemper</td>
-<td>0.997481</td>
-<td>0.997481</td>
-<td>0.997481</td>
+<td>0.992500</td>
+<td>1.000000</td>
+<td>0.996236</td>
 <td>397.0</td>
 </tr>
 <tr class="odd">
@@ -1194,16 +1194,16 @@ Length of test set: 4800</code></pre>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Hepatitis</td>
-<td>0.994924</td>
-<td>0.997455</td>
-<td>0.996188</td>
+<td>1.000000</td>
+<td>0.989822</td>
+<td>0.994885</td>
 <td>393.0</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Tetanus</td>
+<td>0.997494</td>
 <td>1.000000</td>
-<td>1.000000</td>
-<td>1.000000</td>
+<td>0.998745</td>
 <td>398.0</td>
 </tr>
 <tr class="even">
@@ -1215,16 +1215,16 @@ Length of test set: 4800</code></pre>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Diabetes</td>
+<td>0.994898</td>
 <td>1.000000</td>
-<td>1.000000</td>
-<td>1.000000</td>
+<td>0.997442</td>
 <td>390.0</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Gastrointestinal Disease</td>
 <td>1.000000</td>
-<td>1.000000</td>
-<td>1.000000</td>
+<td>0.997519</td>
+<td>0.998758</td>
 <td>403.0</td>
 </tr>
 <tr class="odd">
@@ -1243,9 +1243,9 @@ Length of test set: 4800</code></pre>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Cancers</td>
-<td>0.997543</td>
-<td>0.990244</td>
-<td>0.993880</td>
+<td>0.995134</td>
+<td>0.997561</td>
+<td>0.996346</td>
 <td>410.0</td>
 </tr>
 <tr class="even">
@@ -1257,16 +1257,16 @@ Length of test set: 4800</code></pre>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">macro avg</td>
-<td>0.998138</td>
-<td>0.998146</td>
-<td>0.998140</td>
+<td>0.997714</td>
+<td>0.997714</td>
+<td>0.997709</td>
 <td>4800.0</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">weighted avg</td>
-<td>0.998129</td>
-<td>0.998125</td>
-<td>0.998125</td>
+<td>0.997715</td>
+<td>0.997708</td>
+<td>0.997707</td>
 <td>4800.0</td>
 </tr>
 </tbody>
@@ -1277,7 +1277,7 @@ Length of test set: 4800</code></pre>
 </div>
 <p>As we can see from the table above, our neural network predicts the 12 disease at very high precision, recall and <span class="math inline">F_1</span> scores.</p>
 <p>We can also plot the confusion matrix to have better understanding of the prediction performance:</p>
-<div id="8c1d9019" class="cell" data-execution_count="20">
+<div id="a93c76e2" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>conf_matrix <span class="op">=</span> metrics.confusion_matrix(y_true_classes, y_pred_classes)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df_cm <span class="op">=</span> pd.DataFrame(conf_matrix, index<span class="op">=</span>df[<span class="st">'Disease'</span>].unique(), columns<span class="op">=</span>df[<span class="st">'Disease'</span>].unique())</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'F1-score% ='</span>, f1_score(y_true_classes, y_pred_classes, average<span class="op">=</span><span class="st">'weighted'</span>)<span class="op">*</span><span class="dv">100</span>, <span class="st">'|'</span>,</span>
@@ -1289,7 +1289,7 @@ Length of test set: 4800</code></pre>
 <span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>sns.heatmap(df_cm)</span>
 <span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>F1-score% = 99.81250127101687 | Accuracy% = 99.8125 | Recall% = 99.8125 | Precision% = 99.81285869437258</code></pre>
+<pre><code>F1-score% = 99.77067574596379 | Accuracy% = 99.77083333333333 | Recall% = 99.77083333333333 | Precision% = 99.77146300647077</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -1299,7 +1299,7 @@ Length of test set: 4800</code></pre>
 </div>
 </div>
 </div>
-<div id="58e47fae" class="cell" data-execution_count="21">
+<div id="704fdd6f" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>ax.matshow(conf_matrix, cmap<span class="op">=</span>plt.cm.Blues, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(conf_matrix.shape[<span class="dv">0</span>]):</span>
@@ -1319,7 +1319,7 @@ Length of test set: 4800</code></pre>
 </div>
 </div>
 <p>Further, we can visualize the the <code>loss</code> of the train and validation split during the whole training process, which is shown as follows:</p>
-<div id="1b927d48" class="cell" data-execution_count="22">
+<div id="a7fd9a3f" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>train_loss <span class="op">=</span> train_loss_list</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>val_loss <span class="op">=</span> val_loss_list</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>train_acc <span class="op">=</span> train_f1_list</span>
@@ -1343,7 +1343,7 @@ Length of test set: 4800</code></pre>
 </div>
 </div>
 <p>The <span class="math inline">F_1</span> score of the train and test split during the whole training process is shown as follows:</p>
-<div id="c83ad61d" class="cell" data-execution_count="23">
+<div id="e4fc47e9" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw accuracy plot</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">8</span>,<span class="dv">8</span>))</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>plt.plot(train_acc, label<span class="op">=</span><span class="st">'Training Accuracy'</span>)</span>
@@ -1428,18 +1428,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1471,7 +1460,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -1523,6 +1534,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (showAllCode) {
     showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/tong-zeng\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1557,7 +1586,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -1605,7 +1638,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -1832,7 +1870,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <input type="hidden" id="giscus-alt-theme" value="light">
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../blogs/regression/index.html" class="pagination-link  aria-label=" linear="" and="" nonlinear="" regression"="">
+      <a href="../../blogs/regression/index.html" class="pagination-link" aria-label="Linear and Nonlinear Regression">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Linear and Nonlinear Regression</span>
       </a>          
   </div>
@@ -2374,7 +2412,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb26-576"><a href="#cb26-576" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Interpretability:** Neural networks, particularly deep architectures, are often considered as "black-box" models, making it challenging to interpret and understand the decision-making process. Lack of interpretability can be a concern in fields where transparency and explainability are crucial.</span>
 <span id="cb26-577"><a href="#cb26-577" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-578"><a href="#cb26-578" aria-hidden="true" tabindex="-1"></a>Despite these challenges, ongoing research and advancements in deep learning aim to address these limitations and enhance the performance, robustness, and interpretability of neural networks. Let's keep learning!</span>
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
